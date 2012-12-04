@@ -39,5 +39,7 @@ public class ParkingBoyTest {
         ParkingBoy parkingBoy= new ParkingBoy(parkPlaces, new FirstAvailableParkingLotChooser());
         Ticket ticket=parkingBoy.park(car);
         Assert.assertSame(car,parkingBoy.fetch(ticket));
+
+
     }
 }

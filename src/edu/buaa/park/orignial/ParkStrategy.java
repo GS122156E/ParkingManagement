@@ -1,8 +1,8 @@
 package edu.buaa.park.orignial;
 
-import edu.buaa.park.ParkPlaceExtInfo;
+import edu.buaa.park.ParkPlace;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,5 +12,5 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public interface ParkStrategy {
-    ParkPlaceExtInfo getAvailablePark(List<ParkPlaceExtInfo> parks);
+    ParkPlace getAvailablePark(Collection<ParkPlace> parks);
 }
