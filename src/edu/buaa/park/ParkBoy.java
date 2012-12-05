@@ -29,6 +29,15 @@ public class ParkBoy {
         }
         return availableNum;
     }
+
+    public Integer getTotalCapacity() {
+        int totalCapacity=0;
+        for(ParkPlaceExtInfo parkPlace:parkPlaces){
+            totalCapacity+=parkPlace.getTotalCapacity();
+        }
+        return totalCapacity;
+    }
+
     public Car fetch(Ticket ticket) {
         Car fetchedCar=null;
         for(ParkPlace parkPlace:parkPlaces){

@@ -13,8 +13,11 @@ public class ParkPlaceExtInfo extends ParkPlace{
     //停车场名称
     private String parkPlaceName="";
 
+    private int totalCapacity = 0;
+
     public ParkPlaceExtInfo(String parkPlaceNo,String parkPlaceName,int capacity) {
         super(capacity);
+        totalCapacity = capacity;
         this.parkPlaceName = parkPlaceName;
         this.parkPlaceNo = parkPlaceNo;
     }
@@ -33,5 +36,9 @@ public class ParkPlaceExtInfo extends ParkPlace{
 
     public void setParkPlaceName(String parkPlaceName) {
         this.parkPlaceName = parkPlaceName;
+    }
+
+    public int getTotalCapacity() {
+        return totalCapacity;
     }
 }
