@@ -15,7 +15,7 @@ import java.util.List;
  * Time: 下午6:07
  * To change this template use File | Settings | File Templates.
  */
-public class ParkReport {
+public class ParkReportTest {
 
     private List<ParkBoyInfo> parkBoys = null;
 
@@ -32,6 +32,19 @@ public class ParkReport {
         ArrayList<ParkPlaceExtInfo> parkPlaces=new ArrayList<ParkPlaceExtInfo>();
         parkPlaces.add(parkPlace) ;
         return new ParkBoy(parkPlaces, new FirstAvailableParkStrategy());
+    }
+
+    private Integer totalAmount;
+    private ParkBoy initMany()
+    {
+        List<ParkPlaceExtInfo> parkPlaces=new ArrayList<ParkPlaceExtInfo>();
+        String[][] parkPlaceStr= new String[][]{{"1001","","10"},{"1002","","20"}};
+        totalAmount=0;
+        for(String[] parkstr:parkPlaceStr){
+            parkPlaces.add(new ParkPlaceExtInfo(parkstr[0],parkstr[1],Integer.parseInt(parkstr[2])));
+            totalAmount+=Integer.parseInt(parkstr[2]);
+        }
+        return new ParkBoy(parkPlaces, new MaxAvailableParkStrategy());
     }
 
     @Test
@@ -59,6 +72,7 @@ public class ParkReport {
             Assert.assertEquals(new Integer(integers[index++].intValue() - 1), parkBoy.getAvailableNum());
         }
 
+        //显示报表
 
 
     }

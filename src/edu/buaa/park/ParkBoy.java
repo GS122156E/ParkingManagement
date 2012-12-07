@@ -22,6 +22,11 @@ public class ParkBoy {
         return parkStrategy.getAvailablePark(parkPlaces).parkCar(car);
     }
 
+    public List<ParkPlaceExtInfo> getParkPlaces()
+    {
+        return this.parkPlaces;
+    }
+
     public Integer getAvailableNum() {
         int availableNum=0;
         for(ParkPlace parkPlace:parkPlaces){

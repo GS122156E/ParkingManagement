@@ -26,4 +26,15 @@ public class ParkManager {
     public Map<ParkBoyInfo, ParkBoy> getParkBoyMap() {
         return parkBoyMap;
     }
+
+    /**
+     * 显示停车仔报表
+     */
+    public void showParkingBoyReporter(ParkBoyInfo parkBoyInfo)
+    {
+        Integer allTotalCapacity = 0,allAvailableNum = 0;
+        ParkBoy parkBoy = this.getParkBoy(parkBoyInfo);
+
+    }
+
 }
