@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ab35d82-d29a-49aa-af8d-f9725fd46808" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/buaa/park/ParkManager.java" afterPath="$PROJECT_DIR$/src/edu/buaa/park/ParkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/edu/buaa/test/ParkPlaceManagerTest.java" afterPath="$PROJECT_DIR$/test/edu/buaa/test/ParkPlaceManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java" afterPath="$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java" />
-    </list>
+    <list default="true" id="8ab35d82-d29a-49aa-af8d-f9725fd46808" name="Default" comment="" />
     <ignored path="parkingManagement.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
