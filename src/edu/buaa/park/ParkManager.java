@@ -1,6 +1,7 @@
 package edu.buaa.park;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -34,7 +35,23 @@ public class ParkManager {
     {
         Integer allTotalCapacity = 0,allAvailableNum = 0;
         ParkBoy parkBoy = this.getParkBoy(parkBoyInfo);
+        List<ParkPlaceExtInfo> parkPlaceExtInfos = parkBoy.getParkPlaces();
+        println(0,parkBoyInfo.getParkBoyName());
+        if(parkPlaceExtInfos != null && parkPlaceExtInfos.size()>0)
+        {
+            for(ParkPlaceExtInfo parkPlaceExtInfo:parkPlaceExtInfos)
+            {
 
+            }
+        }
+
+    }
+
+    private void println(int spaceNum,String content)
+    {
+        for(int i = 0;i<spaceNum;i++)
+           System.out.print(" ");
+        System.out.println(content);
     }
 
 }
