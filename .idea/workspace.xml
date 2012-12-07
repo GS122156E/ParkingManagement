@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ab35d82-d29a-49aa-af8d-f9725fd46808" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/buaa/park/ParkManager.java" afterPath="$PROJECT_DIR$/src/edu/buaa/park/ParkManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java" afterPath="$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java" />
     </list>
@@ -61,10 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParkReportTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ParkReportTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="7" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+            <state line="49" column="3" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.36507937">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1021#1039#0" expanded="true" />
@@ -94,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParkManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ParkManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="6" selection-start="1718" selection-end="1718" vertical-scroll-proportion="1.1058201">
+            <state line="34" column="41" selection-start="820" selection-end="845" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#341#363#0" expanded="true" />
               </folding>
@@ -571,7 +572,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31921825" sideWeight="0.22950819" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25325733" sideWeight="0.22950819" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7704918" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -685,11 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkBoyInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="373" selection-end="373" vertical-scroll-proportion="0.4362069" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="47" selection-start="680" selection-end="680" vertical-scroll-proportion="1.1640211">
@@ -714,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkPlaceExtInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="222" selection-end="222" vertical-scroll-proportion="0.22509225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkBoy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="50" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
@@ -728,21 +717,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkPlaceExtInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="7" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1021#1039#0" expanded="true" />
-          </folding>
+        <state line="13" column="40" selection-start="324" selection-end="324" vertical-scroll-proportion="0.55350554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkBoyInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="42" selection-start="284" selection-end="284" vertical-scroll-proportion="0.44144145">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/buaa/park/ParkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="6" selection-start="1718" selection-end="1718" vertical-scroll-proportion="1.1058201">
+        <state line="34" column="41" selection-start="820" selection-end="845" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#341#363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/buaa/test/ParkReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="3" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.36507937">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1021#1039#0" expanded="true" />
           </folding>
         </state>
       </provider>

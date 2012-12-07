@@ -28,6 +28,80 @@ public class ParkManager {
         return parkBoyMap;
     }
 
+    private Integer allManageTotalCapacity = 0,allManageAvailableNum = 0;
+    /**
+     * 显示主管报表
+     */
+    public void showParkManagerReporter()
+    {
+        allManageTotalCapacity = 0;
+        allManageAvailableNum = 0;
+        if(parkBoyMap.isEmpty())
+          println(0,"无所属停车仔，也没有自属停车场。");
+        else
+        {
+            println(0,"--主管 报表---");
+            ParkBoyInfo[] parkBoyInfos = getParkBoyInfos();
+
+
+            ParkBoy parkBoy = null;
+            List<ParkPlaceExtInfo> parkPlaceExtInfos = null;
+
+            for(int i = 0,m = parkBoyInfos.length;i<m;i++)
+            {
+                parkBoy = this.getParkBoy(parkBoyInfos[i]);
+                if(parkBoyInfos[i].isManager())
+                {
+             //显示主管自管理停车场
+            if(parkBoy != null)
+            {
+                parkPlaceExtInfos = parkBoy.getParkPlaces();
+
+                if(parkPlaceExtInfos != null && !parkPlaceExtInfos.isEmpty())
+                {
+                    for(ParkPlaceExtInfo parkPlaceExtInfo:parkPlaceExtInfos)
+                    {
+                        allManageAvailableNum += parkPlaceExtInfo.getAvailableNum();
+                        allManageTotalCapacity += parkPlaceExtInfo.getTotalCapacity();
+                        println(0,"停车场编号："+parkPlaceExtInfo.getParkPlaceNo());
+                        println(6,"车位数："+parkPlaceExtInfo.getTotalCapacity());
+                        println(6,"空位数："+parkPlaceExtInfo.getAvailableNum());
+                    }
+                }
+              }
+
+            } //end isManage
+            else
+            {
+                showParkingBoyReporter(parkBoyInfos[i]);
+            }
+        } //end for
+      }
+    }
+
+    private ParkBoyInfo[] getParkBoyInfos()
+    {
+        ParkBoyInfo temp = null;
+        ParkBoyInfo[] parkBoyInfoArray = parkBoyMap.keySet().toArray(new ParkBoyInfo[parkBoyMap.size()]);
+        int index = 0;
+        for(int i =0,m = parkBoyInfoArray.length;i<m;i++)
+        {
+            if(parkBoyInfoArray[i].isManager())
+            {
+                if(i>index)
+                {
+                  temp = parkBoyInfoArray[index];
+                  parkBoyInfoArray[index]=parkBoyInfoArray[i];
+                  parkBoyInfoArray[i] = temp;
+                }
+                index++;
+            }
+        }
+
+        return parkBoyInfoArray;
+    }
+
+
     /**
      * 显示停车仔报表
      */
@@ -37,7 +111,7 @@ public class ParkManager {
         ParkBoy parkBoy = this.getParkBoy(parkBoyInfo);
         List<ParkPlaceExtInfo> parkPlaceExtInfos = parkBoy.getParkPlaces();
         println(0,"--停车仔 "+parkBoyInfo.getParkBoyName()+" 报表---");
-        if(parkPlaceExtInfos != null && parkPlaceExtInfos.size()>0)
+        if(parkPlaceExtInfos != null && !parkPlaceExtInfos.isEmpty())
         {
             for(ParkPlaceExtInfo parkPlaceExtInfo:parkPlaceExtInfos)
             {
@@ -50,6 +124,8 @@ public class ParkManager {
             println(6,"车位数："+allTotalCapacity.toString());
             println(6,"空位数："+allAvailableNum.toString());
         }
+        allManageTotalCapacity += allTotalCapacity;
+        allManageAvailableNum += allAvailableNum;
 
     }
 

@@ -47,6 +47,8 @@ public class ParkReportTest {
         return new ParkBoy(parkPlaces, new MaxAvailableParkStrategy());
     }
 
+
+
     @Test
     public void parkingboy_show_reporter()
     {
