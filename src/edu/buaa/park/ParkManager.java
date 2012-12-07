@@ -76,6 +76,9 @@ public class ParkManager {
                 showParkingBoyReporter(parkBoyInfos[i]);
             }
         } //end for
+
+            println(0,"所有车位数："+allManageTotalCapacity);
+            println(0,"所有空位数："+allManageAvailableNum);
       }
     }
 
@@ -86,6 +89,7 @@ public class ParkManager {
         int index = 0;
         for(int i =0,m = parkBoyInfoArray.length;i<m;i++)
         {
+            //System.out.println("====="+parkBoyInfoArray[i].getParkBoyName()+"::"+parkBoyInfoArray[i].isManager());
             if(parkBoyInfoArray[i].isManager())
             {
                 if(i>index)
@@ -121,8 +125,8 @@ public class ParkManager {
                 println(12,"车位数："+parkPlaceExtInfo.getTotalCapacity());
                 println(12,"空位数："+parkPlaceExtInfo.getAvailableNum());
             }
-            println(6,"车位数："+allTotalCapacity.toString());
-            println(6,"空位数："+allAvailableNum.toString());
+            println(6,"所属停车场车位数："+allTotalCapacity.toString());
+            println(6,"所属停车场空位数："+allAvailableNum.toString());
         }
         allManageTotalCapacity += allTotalCapacity;
         allManageAvailableNum += allAvailableNum;

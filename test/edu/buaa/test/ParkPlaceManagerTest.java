@@ -57,7 +57,7 @@ public class ParkPlaceManagerTest {
     public void parkManager_manyParkPlace_ShouldParkCar()
     {
         ParkManager parkManager = new ParkManager();
-        ParkBoyInfo parkBoyInfo=new ParkBoyInfo("boy1");
+        ParkBoyInfo parkBoyInfo=new ParkBoyInfo("boy1",true);
         parkManager.addParkBoy(parkBoyInfo,initMany());
         parkBoys.add(parkBoyInfo);
 
