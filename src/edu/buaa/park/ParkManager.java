@@ -36,13 +36,19 @@ public class ParkManager {
         Integer allTotalCapacity = 0,allAvailableNum = 0;
         ParkBoy parkBoy = this.getParkBoy(parkBoyInfo);
         List<ParkPlaceExtInfo> parkPlaceExtInfos = parkBoy.getParkPlaces();
-        println(0,parkBoyInfo.getParkBoyName());
+        println(0,"--停车仔 "+parkBoyInfo.getParkBoyName()+" 报表---");
         if(parkPlaceExtInfos != null && parkPlaceExtInfos.size()>0)
         {
             for(ParkPlaceExtInfo parkPlaceExtInfo:parkPlaceExtInfos)
             {
-
+                allAvailableNum += parkPlaceExtInfo.getAvailableNum();
+                allTotalCapacity += parkPlaceExtInfo.getTotalCapacity();
+                println(6,"停车场编号："+parkPlaceExtInfo.getParkPlaceNo());
+                println(12,"车位数："+parkPlaceExtInfo.getTotalCapacity());
+                println(12,"空位数："+parkPlaceExtInfo.getAvailableNum());
             }
+            println(6,"车位数："+allTotalCapacity.toString());
+            println(6,"空位数："+allAvailableNum.toString());
         }
 
     }

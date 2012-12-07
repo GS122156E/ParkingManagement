@@ -38,7 +38,7 @@ public class ParkReportTest {
     private ParkBoy initMany()
     {
         List<ParkPlaceExtInfo> parkPlaces=new ArrayList<ParkPlaceExtInfo>();
-        String[][] parkPlaceStr= new String[][]{{"1001","","10"},{"1002","","20"}};
+        String[][] parkPlaceStr= new String[][]{{"m1001","","10"},{"m1002","","20"}};
         totalAmount=0;
         for(String[] parkstr:parkPlaceStr){
             parkPlaces.add(new ParkPlaceExtInfo(parkstr[0],parkstr[1],Integer.parseInt(parkstr[2])));
@@ -50,11 +50,12 @@ public class ParkReportTest {
     @Test
     public void parkingboy_show_reporter()
     {
-        Integer[] integers = new Integer[]{10,20,30,40};
-        int index=0;
+        Integer[] integers = new Integer[]{30,20,10,40};
+        int index=1;
         ParkManager parkManager = new ParkManager();
         ParkBoyInfo parkBoyInfo=new ParkBoyInfo("boy1");
-        parkManager.addParkBoy(parkBoyInfo,init("1001", "", integers[index++].intValue()));
+        //parkManager.addParkBoy(parkBoyInfo,init("1001", "", integers[index++].intValue()));
+        parkManager.addParkBoy(parkBoyInfo,initMany());
         parkBoys.add(parkBoyInfo);
 
         parkBoyInfo=new ParkBoyInfo("boy2");
@@ -68,12 +69,15 @@ public class ParkReportTest {
             Car car=new Car();
             ParkBoy parkBoy = parkManager.getParkBoy(parkBoyPerson);
             Ticket ticket = parkBoy.park(car);
-            System.out.println((index+1)+"、"+(integers[index].intValue()-1)+":"+parkBoy.getAvailableNum());
+           // System.out.println((index+1)+"、"+(integers[index].intValue()-1)+":"+parkBoy.getAvailableNum());
             Assert.assertEquals(new Integer(integers[index++].intValue() - 1), parkBoy.getAvailableNum());
         }
 
         //显示报表
-
+        for(ParkBoyInfo parkBoyPerson:parkBoys)
+        {
+           parkManager.showParkingBoyReporter(parkBoyPerson);
+        }
 
     }
 
