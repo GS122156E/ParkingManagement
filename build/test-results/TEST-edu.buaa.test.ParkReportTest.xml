@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="Lenovo-lb-PC" name="edu.buaa.test.ParkReportTest" tests="2" time="0.015" timestamp="2012-12-18T06:17:37">
+  <properties />
+  <testcase classname="edu.buaa.test.ParkReportTest" name="parkingManager_show_reporter" time="0.0" />
+  <testcase classname="edu.buaa.test.ParkReportTest" name="parkingboy_show_reporter" time="0.0" />
+  <system-out><![CDATA[--主管 报表---
+停车场编号：1001
+      车位数：10
+      空位数：9
+--停车仔 boythree 报表---
+      停车场编号：1003
+            车位数：30
+            空位数：29
+      所属停车场车位数：30
+      所属停车场空位数：29
+--停车仔 boytwo 报表---
+      停车场编号：m1001
+            车位数：10
+            空位数：10
+      停车场编号：m1002
+            车位数：20
+            空位数：19
+      所属停车场车位数：30
+      所属停车场空位数：29
+所有车位数：70
+所有空位数：67
+--停车仔 boy1 报表---
+      停车场编号：m1001
+            车位数：10
+            空位数：10
+      停车场编号：m1002
+            车位数：20
+            空位数：19
+      所属停车场车位数：30
+      所属停车场空位数：29
+--停车仔 boy2 报表---
+      停车场编号：1002
+            车位数：20
+            空位数：19
+      所属停车场车位数：20
+      所属停车场空位数：19
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
